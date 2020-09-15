@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Very weak web app</title>
+</head>
+<body>
+  <h1>こんにちはこんにちは！！</h1>
+  <h2>何か入力してね！</h2>
+  <form method="POST" action="/">
+    <input type="text" name="memo" />
+    <input type="submit" />
+  </form>
+  <hr />
+  <h2>入力結果</h2>
+  <ul>
+  <% @array.each do |memo| %>
+    <li><%= memo["memo"] %></li>
+  <% end %>
+  </ul>
+</body>
+</html>
